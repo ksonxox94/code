@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "677837889114",
+    "firebase_url": "https://hotelboard-11318.firebaseio.com",
+    "project_id": "hotelboard-11318",
+    "storage_bucket": "hotelboard-11318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677837889114:android:822b0165aca0dd15450263",
+        "android_client_info": {
+          "package_name": "com.example.parsetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677837889114-qkme7kkidg190qr8kedsrjqjds2r66ke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parsetest",
+            "certificate_hash": "81f84254fd11e04fb202366e02a3bc8c675e217c"
+          }
+        },
+        {
+          "client_id": "677837889114-obhmm3jd4o3vaq2g06hg2cictfl0f0kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjE2Ov8JlT05hMNa294MJvNtfSMHWCXMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677837889114-obhmm3jd4o3vaq2g06hg2cictfl0f0kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

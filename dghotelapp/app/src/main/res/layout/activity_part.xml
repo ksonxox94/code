@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".partActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/title" />
+
+    <TextView
+        android:id="@+id/partTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:text="대구광역시에는 8개의 지역구가 있습니다"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/suseongButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/seosung" />
+
+            <Button
+                android:id="@+id/northButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/northe" />
+
+            <Button
+                android:id="@+id/eastButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/east" />
+
+            <Button
+                android:id="@+id/southButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/south" />
+
+            <Button
+                android:id="@+id/middleButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/middle" />
+
+            <Button
+                android:id="@+id/westButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/west" />
+
+            <Button
+                android:id="@+id/dalsungButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/dalseongun"
+                 />
+
+            <Button
+                android:id="@+id/dalseoButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/dalseojpg" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/partToSearchButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:text="뒤로 가기" />
+
+</LinearLayout>

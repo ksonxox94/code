@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    tools:context=".HotelListActivity">
+
+    <TextView
+        android:id="@+id/hotelListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="검색한 값과 연관된 숙소 목록입니다. 하나를 선택하세요."
+        android:textColor="#130000" />
+
+    <ListView
+        android:id="@+id/hotelListView"
+        android:layout_width="match_parent"
+        android:layout_height="520dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:text="취소"
+        android:textStyle="bold" />
+
+</LinearLayout>

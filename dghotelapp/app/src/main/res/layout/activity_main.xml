@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/mainSpinner"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/SearchMenu" />
+
+        <EditText
+            android:id="@+id/mainSearchEdit"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:hint="지역명 또는 업소명을 입력하세요"
+            android:inputType="textPersonName"
+            android:textColor="#272424"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/mainSearchButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:background="@drawable/search_back" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <view
+                android:id="@+id/view"
+                class="androidx.viewpager.widget.ViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <androidx.viewpager.widget.PagerTabStrip
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top"
+                    android:background="#FFFFFF"
+                    android:textColor="#000000"
+                    android:textSize="12sp"></androidx.viewpager.widget.PagerTabStrip>
+            </view>
+
+            <Button
+                android:id="@+id/partListButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/nm01" />
+
+            <Button
+                android:id="@+id/newListButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/nm02" />
+
+            <Button
+                android:id="@+id/reviewButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/nm03" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/daegu" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
