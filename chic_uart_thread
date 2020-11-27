@@ -1,0 +1,162 @@
+import jetson.inference
+import jetson.utils
+
+import argparse
+import sys
+
+import time
+import serial
+
+import threading
+
+def receiveThread(ser,):
+	global chk	
+	chk=0
+	global z
+	z=0
+
+	print('{} start'.format(threading.currentThread().getName()))
+
+	while True:
+		if(ser.read()==b'o'):
+			chk=1
+		elif(ser.read()==b'f'):
+			chk=0
+		elif(ser.read()==b'a'):
+			z=1
+		elif(ser.read()==b'n'):
+			z=0
+def sendThread(ser,):
+	global cnt
+	global nct
+	global xct
+	cnt=0
+	nct=0
+	xct=0
+
+	print('{} start'.format(threading.currentThread().getName()))
+	try:
+		opt = parser.parse_known_args()[0]
+	except:
+		print("")
+		parser.print_help()
+		ser.close()
+		sys.exit(0)
+
+	# load the recognition network
+	net = jetson.inference.imageNet(opt.network, sys.argv)
+
+	# create video sources & outputs
+	input = jetson.utils.videoSource(opt.input_URI, argv=sys.argv)
+	output = jetson.utils.videoOutput(opt.output_URI, argv=sys.argv+is_headless)
+	font = jetson.utils.cudaFont()
+
+	try:
+		while True:
+			if(chk==1):
+				print("Detecting Status")
+			
+				# capture the next image
+				img = input.Capture()
+
+				# classify the image
+				class_id, confidence = net.Classify(img)
+
+				# find the object description
+				class_desc = net.GetClassDesc(class_id)
+		
+				if( ((confidence*100)>99) and (class_desc=="handonchic") ):
+					cnt=cnt+1
+					if(cnt>10):
+						nct=0
+						xct=0
+					if(cnt>80):
+						ser.write(b'h')
+						font.OverlayText(img, img.width, img.height, "Alarm : Poor posture(chin on hand)", 5, 5, font.Blue , font.Gray10)
+						time.sleep(0.1)
+					else:
+						font.OverlayText(img, img.width, img.height, "{:05.2f}% {:s} {:4d}".format(confidence * 100, "Poor posture",cnt), 5, 5, font.Blue , font.Gray10)
+				elif(z==1):
+					font.OverlayText(img, img.width, img.height, "Alarm : Take a rest".format(nct), 5, 5, font.Yellow, font.Gray10)
+				elif( ((confidence*100)>70) and (class_desc=="normal") ):
+					nct=nct+1
+					if(nct>10):
+						cnt=0
+						xct=0
+					if(nct>50):
+						font.OverlayText(img, img.width, img.height, "{:05.2f}% {:s}".format(confidence * 100, "People"), 5, 5, font.White, font.Gray10)
+						ser.write(b'p')
+						time.sleep(0.1)
+					else:
+						font.OverlayText(img, img.width, img.height, "Detecting people{:4d}".format(nct), 5, 5, font.White, font.Gray10)
+				else:
+					xct=xct+1
+					if(xct>10):
+						cnt=0
+						nct=0
+					if(xct>100):
+						font.OverlayText(img, img.width, img.height, "{:s}".format("No People"), 5, 5, font.Black, font.Gray10)
+						ser.write(b'x')
+						time.sleep(0.1)	
+					else:
+						font.OverlayText(img, img.width, img.height, "No people{:4d}".format(xct), 5, 5, font.Black, font.Gray10)
+				# render the image
+				output.Render(img)
+			
+				# update the title bar
+				output.SetStatus("{:s} | Network {:.0f} FPS".format(net.GetNetworkName(), net.GetNetworkFPS()))
+			
+				# print out performance info
+				net.PrintProfilerTimes()
+				
+				# exit on input/output EOS
+				if not input.IsStreaming() or not output.IsStreaming():
+					break
+			else:
+				print("Waiting status")
+	except:
+		ser.close()
+		sys.exit(0)
+	finally:
+		ser.close()
+		sys.exit(0)
+
+if __name__ == '__main__':
+	try:
+		ser=serial.Serial(port="/dev/ttyUSB0",baudrate=115200)
+		time.sleep(1)
+		print("serial connect success")
+	except:
+		print("serial connect error")
+		ser.close()
+		sys.exit(0)
+
+	#parse the command line
+	parser = argparse.ArgumentParser(description="Classify a live camera stream using an image recognition DNN.",formatter_class=argparse.RawTextHelpFormatter,epilog=jetson.inference.imageNet.Usage()+jetson.utils.videoSource.Usage()+jetson.utils.videoOutput.Usage()+jetson.utils.logUsage())
+	parser.add_argument("input_URI", type=str, default="", nargs='?', help="URI of the input stream")
+	parser.add_argument("output_URI", type=str, default="", nargs='?', help="URI of the output stream")
+	parser.add_argument("--network", type=str, default="googlenet", help="pre-trained model to load (see below for options)")
+	parser.add_argument("--camera", type=str, default="0", help="index of the MIPI CSI camera to use (e.g. CSI camera 0)\nor for VL42 cameras, the /dev/video device to use.\nby default, MIPI CSI camera 0 will be used.")
+	parser.add_argument("--width", type=int, default=1280, help="desired width of camera stream (default is 1280 pixels)")
+	parser.add_argument("--height", type=int, default=720, help="desired height of camera stream (default is 720 pixels)")
+	parser.add_argument('--headless', action='store_true', default=(), help="run without display")
+	is_headless = ["--headless"] if sys.argv[0].find('console.py') != -1 else [""]
+
+	try:
+		thread1=threading.Thread(target=receiveThread,name="receiveThread",args=(ser,))
+	except:
+		print("readThread create error")
+
+	try:
+		thread2=threading.Thread(target=sendThread,name="sendThread",args=(ser,))
+	except:	
+		print("sendThread create error")
+	try:
+		thread1.start()
+		thread2.start()
+	except:
+		print("thread start error")
+	
+
+
+           
