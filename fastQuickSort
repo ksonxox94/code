@@ -1,0 +1,35 @@
+//피벗을 배열의 중앙 인덱스로 둬서 내림차순 배열과 같은 최악의 경우에도 빠른 성능을 내는 퀵소팅
+//하지만 중복값이 있을 경우 정렬 안됨
+void quickSort(int *data, int low, int high)
+{
+	if (high > low)
+	{
+		int pivotPoint = (low+high)/2;
+		pivotPoint = partition(data, low, high, pivotPoint);
+		quickSort(data, low, pivotPoint - 1);
+		quickSort(data, pivotPoint + 1, high);
+	}
+}
+
+int partition(int *data, int low, int high, int pivotPoint)
+{
+	int pivotItem;
+	pivotItem = data[pivotPoint];
+	do
+	{
+		while (data[low] < pivotItem)
+		{
+			++low;
+		}
+		while (data[high] > pivotItem)
+		{
+			--high;
+		}
+		if (low < high)
+		{
+			swap(data[low],data[high]);
+		}
+	} while (low < high);
+	swap(pivotItem, data[high]);
+	return high;
+}
