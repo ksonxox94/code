@@ -1,0 +1,29 @@
+//중복값 처리가 가능하지만 주어진 배열이 내림차순일 경우 매우 느림
+void quicksort(int data[], int low, int high)
+{
+	int pivotpoint = low;
+	if (high > low) {
+		pivotpoint = partition(data, low, high, pivotpoint);
+		quicksort(data, low, pivotpoint - 1);
+		quicksort(data, pivotpoint + 1, high);
+	}
+}
+
+int partition(int data[], int low, int high, int pivotpoint)
+{
+	int i, j;
+	int pivotitem;
+	pivotitem = data[pivotpoint]; 
+	j = low;
+	for (i = low + 1; i <= high; ++i) 
+		if (data[i] < pivotitem) 
+		{
+			++j;  
+			swap(&data[i], &data[j]); 
+		}
+	pivotpoint = j; 
+
+	swap(&data[low], &data[pivotpoint]);
+
+	return pivotpoint;
+}
