@@ -1,0 +1,245 @@
+//강의자료에 제공된 퀵정렬 알고리즘으로 구현한 테스트
+//작성 : 21311928 손현우
+#include <stdio.h>
+#include <Windows.h>
+#include <time.h>
+
+#define N 10000
+int data[N];
+void quicksort(int data[], int low, int high); //퀵소팅 함수
+void fill(int data[]); //0~N-1까지의 값들을 오름차순으로 배열에 넣는 함수
+void scramble(int data[]); //배열의 값들을 무작위로 섞는 함수
+void selectionSort(int *data);
+void swap(int *a, int *b); //두 값을 swap하는 함수
+void printarray(int data[]); //배열의 앞부분과 끝부분의 값들을 출력시켜 확인하는 함수
+void validate(int data[]); //배열이 오름차순으로 정렬되어있는지 확인하는 함수
+int partition(int data[], int low, int high, int pivotpoint); //퀵소팅 알고리즘(분할)을 수행하는 함수
+void f_quicksort(int *data, int low, int high);
+int f_partition(int *data, int low, int high, int pivotpoint); //퀵소팅 알고리즘(분할)을 수행하는 함수
+
+void main()
+{
+	clock_t start, end;
+	float time;
+
+	fill(data);
+	printf("<0~%d까지의 값들로 채워진 배열>    \n", N - 1);
+	printarray(data);
+
+	printf("<무작위로 섞은 배열>   \n");
+	scramble(data);
+	printarray(data);
+
+	printf("-------------------------------------\n");
+	start = clock();
+	selectionSort(data);
+	end = clock();
+	time = float(end - start) / CLOCKS_PER_SEC;
+	printf("무작위 섞은 배열을 오름차순 선택정렬 하는데 걸린 시간 : %.5fs   \n\n", time);
+	printf("<무작위 섞은 배열을 오름차순 선택정렬 처리한 배열>\n", N - 1);
+	printarray(data);
+	validate(data);
+
+	printf("-------------------------------------\n");
+	scramble(data);
+	start = clock();
+	quicksort(data, 0, N - 1);
+	end = clock();
+	time = float(end - start) / CLOCKS_PER_SEC;
+	printf("무작위로 섞은 배열을 오름차순 퀵소팅 하는데 걸린 시간: %.5fs    \n\n", time);
+	printf("<무작위로 섞은 배열을 오름차순 퀵소팅 처리한 배열>   \n");
+	printarray(data);
+	validate(data);
+
+	printf("-------------------------------------\n");
+	scramble(data);
+	start = clock();
+	f_quicksort(data, 0, N - 1);
+	end = clock();
+	time = float(end - start) / CLOCKS_PER_SEC;
+	printf("무작위 섞은 배열을 오름차순 피벗 중앙 퀵소팅 하는데 걸린 시간 : %.5fs   \n\n", time);
+	printf("<무작위로 섞은 배열을 오름차순 피벗 중앙 퀵소팅 처리한 배열>\n", N - 1);
+	printarray(data);
+	validate(data);
+
+	printf("-------------------------------------\n");
+	fill(data);
+	printf("<%d~1까지의 값들로 채워진 배열>    \n", N - 1);
+	printarray(data);
+	start = clock();
+	selectionSort(data);
+	end = clock();
+	time = float(end - start) / CLOCKS_PER_SEC;
+	printf("초기화된 배열을 오름차순 선택정렬 하는데 걸린 시간 : %.5fs   \n\n", time);
+	printf("<%d~1까지의 값들로 채워진 배열을 오름차순 선택정렬 처리한 배열>\n", N - 1);
+	printarray(data);
+	validate(data);
+
+	printf("-------------------------------------\n");
+	fill(data);
+	printf("<%d~1까지의 값들로 채워진 배열>    \n", N - 1);
+	printarray(data);
+	start = clock();
+	quicksort(data, 0, N - 1);
+	end = clock();
+	time = float(end - start) / CLOCKS_PER_SEC;
+	printf("초기화된 배열을 오름차순 퀵소팅 하는데 걸린 시간 : %.5fs   \n\n", time);
+	printf("<%d~1까지의 값들로 채워진 배열을 오름차순 퀵소팅 처리한 배열>\n", N - 1);
+	printarray(data);
+	validate(data);
+
+	printf("-------------------------------------\n");
+	fill(data);
+	printf("<%d~1까지의 값들로 채워진 배열>    \n", N - 1);
+	printarray(data);
+	start = clock();
+	f_quicksort(data, 0, N - 1);
+	end = clock();
+	time = float(end - start) / CLOCKS_PER_SEC;
+	printf("초기화된 배열을 오름차순 피벗 중앙 퀵소팅 하는데 걸린 시간 : %.5fs   \n\n", time);
+	printf("<%d~1까지의 값들로 채워진 배열을 오름차순 피벗 중앙 퀵소팅 처리한 배열>\n", N - 1);
+	printarray(data);
+	validate(data);
+}
+
+void quicksort(int data[], int low, int high)
+{
+	int pivotpoint = low;
+	if (high > low) {
+		pivotpoint = partition(data, low, high, pivotpoint);
+		quicksort(data, low, pivotpoint - 1);
+		quicksort(data, pivotpoint + 1, high);
+	}
+}
+
+int partition(int data[], int low, int high, int pivotpoint)
+{
+	int i, j;
+	int pivotitem;
+	pivotitem = data[pivotpoint];
+	j = low;
+	for (i = low + 1; i <= high; ++i)
+		if (data[i] < pivotitem)
+		{
+			++j;
+			swap(&data[i], &data[j]);
+		}
+	pivotpoint = j;
+
+	swap(&data[low], &data[pivotpoint]);
+
+	return pivotpoint;
+}
+
+
+void fill(int data[])
+{
+	for (int i = 0; i < N; ++i)
+	{
+		data[i] = N-i;
+	}
+}
+
+void selectionSort(int *data)
+{
+	for (int i = 0; i < N; ++i)
+	{
+		for (int j = i + 1; j < N; ++j)
+		{
+			if (data[i] > data[j])
+			{
+				int temp;
+				temp = data[i];
+				data[i] = data[j];
+				data[j] = temp;
+			}
+		}
+	}
+}
+
+void scramble(int data[])
+{
+	srand(unsigned(time(NULL)));
+	for (int i = 0; i < N; ++i)
+	{
+		int x = (((long)rand() << 15) | rand()) % N;
+		int y = (((long)rand() << 15) | rand()) % N;
+		swap(&data[x], &data[y]);
+	}
+}
+
+void swap(int *a, int *b)
+{
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void printarray(int data[])
+{
+	for (int i = 0; i < 10; i++)
+	{
+		printf("%d ", data[i]);
+	}
+	printf(".......");
+	for (int i = N - 10; i < N; i++)
+	{
+		printf("%d ", data[i]);
+	}
+	printf("\n\n");
+}
+
+void validate(int data[])
+{
+	int i = 0;
+	int chk = 0;
+	while (i < N)
+	{
+		if (data[i] != i+1)
+		{
+			chk = 1;
+			printf("배열이 오름차순으로 정렬되지 않았습니다.    \n\n");
+			break;
+		}
+		++i;
+	}
+	if (chk == 0)
+	{
+		printf("배열이 오름차순으로 정렬되었습니다.    \n\n");
+	}
+}
+
+void f_quicksort(int *data, int low, int high)
+{
+	if (high > low)
+	{
+		int pivotPoint = (low + high) / 2;
+		pivotPoint = f_partition(data, low, high, pivotPoint);
+		f_quicksort(data, low, pivotPoint - 1);
+		f_quicksort(data, pivotPoint + 1, high);
+	}
+}
+
+int f_partition(int *data, int low, int high, int pivotPoint)
+{
+	int pivotItem;
+	pivotItem = data[pivotPoint];
+	do
+	{
+		while (data[low] < pivotItem)
+		{
+			++low;
+		}
+		while (data[high] > pivotItem)
+		{
+			--high;
+		}
+		if (low < high)
+		{
+			swap(&data[low], &data[high]);
+		}
+	} while (low < high);
+	swap(&pivotItem, &data[high]);
+	return high;
+}
