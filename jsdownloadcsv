@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>온누리 알리미</title>
+    <link rel="icon" href="/assets/img/fav.png" type="image/x-icon">
+    <script src="/assets/js/modernizr.js"></script>
+    <script th:src="@{/js/jquery.min.js}"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $("#header").load("/nuriweb/boardlist")
+        /* id 지정을 통해서도 가능합니다. 
+         $("#header").load("header.html #navbar")
+         */       
+      });
+</script>   
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4867d5c72fade2f39824eceb71eaf706&libraries=clusterer,services"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <style>
+.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+        @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+        .a {
+            font-size: 3em;
+            font-family: 'NanumSquare', sans-serif;
+            color: #454040;
+        }
+
+        .b {
+            font-size: 1em;
+            font-family: 'NanumSquare', sans-serif;
+            color: #2A2323;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function moveByFunction(mno) {
+            location.href = "/nuriweb/marketlist?no=" + mno;
+        }
+        function locFunction(no) {
+           if(no==0)
+              {
+                location.href = "/nuriweb/marketlist?type=location&keyword=서울&keyword2=경기";
+              }
+           else if(no==1)
+              {
+              
+              }
+           else if(no==1)
+          {
+          
+          }
+           else if(no==1)
+          {
+          
+          }
+           else if(no==1)
+          {
+          
+          }
+           else if(no==1)
+          {
+          
+          }
+           else if(no==1)
+          {
+          
+          }
+        }
+    </script>
+
+    <div class="container-fluid">
+        <!-- box header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="/nuriweb"><img src="/assets/img/fav.png" width="90" height="90" alt="Logo" style="float:left;"></a>
+            </div>
+           <div class="box-primary-nav-trigger" style="float:left; padding-right:170px">
+               <a th:if="${memberId}==null" href="/nuriweb/loginform" class="box-menu-text" style="padding-right:5px; width:60px">로그인</a>
+            </div>
+            <div class="box-primary-nav-trigger" style="float:left; padding-right:110px">
+               <a th:if="${memberId}==null" href="/nuriweb/registerform" class="box-menu-text" style="padding-right:5px; width:70px">회원가입</a>
+               <a th:unless="${memberId}==null" href="/nuriweb/logout" class="box-menu-text" style="padding-right:5px; width:70px">로그아웃</a>
+              </div>
+            <!-- box-nav -->
+           <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text"></span><span class="box-menu-icon"></span>
+         </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box header -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li class="box-label">MENU</li>
+                <li><a href="/nuriweb/about">온누리상품권 알아보기</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="/nuriweb/banklist">판매처</a></li>
+                <li><a href="/nuriweb/marketlist">사용 가능처</a></li>
+                <li><a href="/nuriweb/info">구매 및 사용 안내</a></li>
+                <li><a href="/nuriweb/boardlist">온누리 게시판</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-container">
+        <div class="page-header">
+            <p class="a"><strong>온누리 상품권 사용 가능처</strong></p>
+        </div>
+        
+        <form action="/nuriweb/marketlist" method="GET">
+            <div style="float:left">
+                <div style="padding-right:5px;width:100px;height:40px;float:left;">
+                    <select class="form-control form-control-sm" name="type" id="type">
+                        <option value="name">이름</option>
+                        <option value="location">주소</option>
+                    </select>
+                </div>
+
+                <div style="padding-right:5px;width:300px;height:40px;float:left;">
+                    <input class="form-control form-control-sm" name="keyword" type="text" placeholder="검색어를 입력해주세요">
+                </div>
+
+                <div style="float:left">
+                    <input class="btn btn-sm btn-primary" type="submit" value="검색" style="width:100px;height:35px">
+                </div>
+            </div>
+        </form>
+        <div class="map_wrap">
+           <div id="map" style="width:100%;height:500px;"></div>
+           <div class="custom_zoomcontrol radius_border"> 
+           <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+           <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+       </div>
+       </div>
+        <br>
+           <button onclick="downloadCSV();">download</button>
+        <a href="/nuriweb" onClick="window.open(this.href, '', 'width=700, height=730'); return false;">하고픈 말</a>
+        <button type="button" onclick="locFunction(0)">전국</button>        
+      <button type="button" onclick="locFunction(1)"> 경기권 </button>
+      <button type="button" onclick="locFunction(2)">강원권</button>
+      <button type="button" onclick="locFunction(3)">충청권</button>
+      <button type="button" onclick="locFunction(4)">경상권</button>
+      <button type="button" onclick="locFunction(5)">전라권</button>
+      <button type="button" onclick="locFunction(6)">제주권</button>   
+        <div id="mainHide">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="col-md-1">번호</th>
+                        <th class="col-md-2">이름</th>
+                        <th class="col-md-3">위치</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--            <tr style="cursor:pointer;" th:each="market : ${marketList}" th:loc="${market.location}" th:name="${market.name}" th:onclick="moveByFunction(this.getAttribute('loc'),this.getAttribute('name'))">   -->
+                    <tr style="cursor:pointer;" th:each="market : ${marketList}" th:onclick="'moveByFunction('+${market.no}+')'">
+                        <td th:text="${market.no}">
+                        </td>
+                        <td th:text="${market.name}"></td>
+                        <td th:text="${market.location}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+        <br />
+        <nav aria-label="Page navigation" style="text-align:center;">
+            <!-- number=0  total=8   start=1  end=8>5?5:8=5 // number=7  total=8   start=6  end= 8>10?5:8=8-->
+            <ul class="pagination" th:with="startNumber=${T(Math).floor(marketList.number/5)}*5+1, endNumber=(${marketList.totalPages} > ${startNumber}+4) ? ${startNumber}+4 : ${marketList.totalPages}">
+
+                <li th:style="${marketList.first} ? 'display:none'">
+                    <a th:href="'/nuriweb/marketlist?type='+${search.type}+'&keyword='+${search.keyword}+'&page=1'">처음</a>
+                </li> <!-- 첫 페이지 -->
+
+                <li th:style="${marketList.first} ? 'display:none'">
+                    <!-- 이전 페이지 [n페이지에서 n-1페이지로 가려면 marketList.number(0부터 시작하므로 n-1과 동일)페이지로 가면 됨] -->
+                    <a th:href="'/nuriweb/marketlist?type='+${search.type}+'&keyword='+${search.keyword}+'&page='+${marketList.number}">이전</a>
+                </li>
+
+                <!-- 페이지에 보이는 시작번호부터 마지막번호까지 시퀀스에 넣어서 이동할 수 있는 페이징 리스트를 만듬  -->
+                <!-- 현재 페이지 번호와 같은 페이징 리스트의 번호에 파란색으로 active 해줌  -->
+                <li th:each="page :${#numbers.sequence(startNumber, endNumber)}" th:class="(${page} == ${marketList.number}+1) ? 'active'">
+                   <a th:href="'/nuriweb/marketlist?type='+${search.type}+'&keyword='+${search.keyword}+'&page='+${page}" th:text="${page}"></a>
+                </li>
+                <li th:style="${marketList.last} ? 'display:none'"> 
+                    <a th:href="@{/nuriweb/marketlist(type=${search.type},keyword=${search.keyword},page=${marketList.number}+2)}">다음</a> <!-- 다음 페이지 -->
+                </li>
+                
+                <li th:style="${marketList.last} ? 'display:none'">
+                   <a th:href="'/nuriweb/marketlist?type='+${search.type}+'&keyword='+${search.keyword}+'&page='+${marketList.totalPages}">마지막</a>
+                </li> <!-- 마지막 -->
+            </ul>
+        </nav>
+   </div>
+   <br/><br/><br/>
+
+<script th:inline="javascript"> //컨트롤러부터 전달된 데이터를 변수에 저장하기 위해 사용
+   /*<![CDATA][*/
+    var marketListSize=/*[[${marketListSize}]]*/null;
+    var marketList=/*[[${marketList.content}]]*/null;
+
+   var marketListMapSize=/*[[${marketListMapSize}]]*/null;
+   var marketListMap=/*[[${marketListMap}]]*/null;
+
+   var ypos=/*[[${marketList.content[0].lat}]]*/null;
+   var xpos=/*[[${marketList.content[0].lon}]]*/null;
+   var skeyword=/*[[${search.keyword}]]*/null;
+   var stype=/*[[${search.type}]]*/null;
+   /*]]*/
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function downloadCSV()
+{
+   var geocoder = new kakao.maps.services.Geocoder();
+
+   var a = "";
+   var cnt=0;
+   var num=1;
+   
+      alert("download execute");
+      $(marketList).each(function(index,object)
+      {
+         geocoder.addressSearch(object.location, function(result, status) 
+         {
+            if (status === kakao.maps.services.Status.OK) 
+            {  
+                a+=object.no+',"'+object.name+'","'+object.location+'",'+result[0].y+','+result[0].x+',"'+object.sell+'","'+object.gift+'"\r\n';
+            }
+            else
+                {
+                a+=object.no+',"'+object.name+'","'+object.location+'",0,0,"'+object.sell+'","'+object.gift+'"\r\n';
+               }
+             cnt=cnt+1;
+             num=num+1;
+            if(cnt===383)
+            {
+              
+               var downloadLink = document.createElement("a");
+               var blob = new Blob([a], { type: "text/csv;charset=utf-8" });
+               var url = URL.createObjectURL(blob);
+               downloadLink.href = url;
+               downloadLink.download = "rdatas.csv";
+
+               document.body.appendChild(downloadLink);
+               downloadLink.click();
+               document.body.removeChild(downloadLink);
+               alert("파일 생성 완료");
+            }
+               
+         });    
+      });
+      cnt=0;
+      num=1;
+      
+}
+</script>
+    <!-- footer -->
+    
+    <div id="header"><h1>include</h1></div>
+     
+   <footer>
+        <div class="container-fluid">
+            <p class="copyright">온누리상품권 알리미 © SON HYUN WOO & JOO JUNG HOON<br>Version 1.1 Developed by SON HYUN WOO 2021.01.03<br>Using images from sbiz.co.kr / Using data from data.go.kr</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/menu.js"></script>
+
+    
+</body>
+</html>
