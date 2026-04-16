@@ -1,0 +1,713 @@
+
+
+[프로시저 호출 결과 샘플]
+ EXEC UVIS_SP_CarTempList_LST_ver3 '3', '1', '15', '0001437', 'CI130925001437', 'bgflogis952', 
+'999022', 'N', '20260405', '20260412', '00', '24', '', '', '', '', ''  
+
+수행시간 : 5초
+
+RNUM	P_GRP_ID	P_GRP_NAME	GRP_ID	GRP_NAME	OFF_NAME	OFF_KEY	WORK_GUBUN_CODE	WORK_GUBUN_NAME	CM_KEY	CM_NUMBER	TID_ID	TEMP_MIN_A	TEMP_MAX_A	TEMP_MIN_B	TEMP_MAX_B	TEMP_MIN_C	TEMP_MAX_C	TEMP_MIN_D	TEMP_MAX_D	TOT_CNT	ISSUE_CNT	DEVICE_TYPE_A	ISSUE_TEMP_ADJUST_A	ISSUE_PERSIST_TIME_A	ISSUE_STEP01_REPEAT_A	ISSUE_STEP01_GROUP_A	ISSUE_STEP01_RESTORE_A	ISSUE_STEP02_REPEAT_A	ISSUE_STEP02_GROUP_A	ISSUE_STEP02_RESTORE_A	ALARM_TIME_A	DEVICE_TYPE_B	ISSUE_TEMP_ADJUST_B	ISSUE_PERSIST_TIME_B	ISSUE_STEP01_REPEAT_B	ISSUE_STEP01_GROUP_B	ISSUE_STEP01_RESTORE_B	ISSUE_STEP02_REPEAT_B	ISSUE_STEP02_GROUP_B	ISSUE_STEP02_RESTORE_B	ALARM_TIME_B	DEVICE_TYPE_C	ISSUE_TEMP_ADJUST_C	ISSUE_PERSIST_TIME_C	ISSUE_STEP01_REPEAT_C	ISSUE_STEP01_GROUP_C	ISSUE_STEP01_RESTORE_C	ISSUE_STEP02_REPEAT_C	ISSUE_STEP02_GROUP_C	ISSUE_STEP02_RESTORE_C	ALARM_TIME_C	DEVICE_TYPE_D	ISSUE_TEMP_ADJUST_D	ISSUE_PERSIST_TIME_D	ISSUE_STEP01_REPEAT_D	ISSUE_STEP01_GROUP_D	ISSUE_STEP01_RESTORE_D	ISSUE_STEP02_REPEAT_D	ISSUE_STEP02_GROUP_D	ISSUE_STEP02_RESTORE_D	ALARM_TIME_D	DTG_SENSING	DTG_DEVICE	TPL_SIGNAL_A	TPL_DEGREE_A	TPL_SIGNAL_B	TPL_DEGREE_B	TPL_SIGNAL_C	TPL_DEGREE_C	TPL_SIGNAL_D	TPL_DEGREE_D	TEMPER_A	TEMPER_B	TEMPER_C	TEMPER_D
+1	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506002	저온1회차	041383	경기80자1216	239213237	-50	-17	-1	11	NULL	NULL	NULL	NULL	190	190	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	0	5.1	0	8.5	NULL	NULL	NULL	NULL	5.1	8.5	NULL	NULL
+2	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506003	저온2회차	026056	경기81바4521	220259770	-50	-17	-1	11	NULL	NULL	NULL	NULL	307	121	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	1	7.8	0	15.9	NULL	NULL	NULL	NULL	-7.8	15.9	NULL	NULL
+3	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506003	저온2회차	007004	경기81바4712	249231713  	-30	-18	0	10	NULL	NULL	NULL	NULL	363	178	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	1	13.7	0	7.7	NULL	NULL	NULL	NULL	-13.7	7.7	NULL	NULL
+4	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506002	저온1회차	026055	경기81바5341	230523202	NULL	NULL	0	10.9	NULL	NULL	NULL	NULL	574	574	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	0	20.6	0	20.7	NULL	NULL	NULL	NULL	20.6	20.7	NULL	NULL
+5	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506003	저온2회차	026093	경기81바6047	224079358	-50	-17	-1	11	NULL	NULL	NULL	NULL	344	237	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	1	5.7	0	10.4	NULL	NULL	NULL	NULL	-5.7	10.4	NULL	NULL
+6	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506002	저온1회차	025218	경기82바5821	220314581	-40	-17	0	10	NULL	NULL	NULL	NULL	540	488	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	0	8.5	0	15.7	NULL	NULL	NULL	NULL	8.5	15.7	NULL	NULL
+7	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	      	NULL	041367	경기85바7879	229184941	-30	-10	-8	18	NULL	NULL	NULL	NULL	0	0	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	Y	0	4.9	0	13.1	NULL	NULL	NULL	NULL	4.9	13.1	NULL	NULL
+8	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506003	저온2회차	041461	경기85자4689	240072952	-50	-17	-1	11	NULL	NULL	NULL	NULL	556	427	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	1	7.4	0	10.2	NULL	NULL	NULL	NULL	-7.4	10.2	NULL	NULL
+9	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	506002	저온1회차	015145	경기85자5722	250554919	-50	-17	-1	11	NULL	NULL	NULL	NULL	1117	1117	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	0	17.1	0	19.8	NULL	NULL	NULL	NULL	17.1	19.8	NULL	NULL
+10	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	      	NULL	041323	경기86아4925	239205672	0	10	0	10	NULL	NULL	NULL	NULL	647	352	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	0	10.0	0	10.7	NULL	NULL	NULL	NULL	10	10.7	NULL	NULL
+11	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	      	NULL	042484	경기86자5561	252730756	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	462	462	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	0	8.7	0	13.7	NULL	NULL	NULL	NULL	8.7	13.7	NULL	NULL
+12	GI230330000005	BGF로지스 검단&#40;저온&#41;	GI230330000005	BGF로지스 검단&#40;저온&#41;	BGF리테일	0001437	      	NULL	042449	경기87바7412	235767765	-30	-18	0	10	NULL	NULL	NULL	NULL	749	708	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	Y	1	10.1	0	6.1	NULL	NULL	NULL	NULL	-10.1	6.1	NULL	NULL
+
+
+1.TEMPERATURETBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable
+off_key	char	no	9	     	     	no
+tid_id	varchar	no	11	     	     	no
+tpl_date	char	no	8	     	     	no
+tpl_time	char	no	6	     	     	no
+tpl_op_code	varchar	no	2	     	     	no
+tpl_x_position	varchar	no	10	     	     	yes
+tpl_y_position	varchar	no	10	     	     	yes
+tpl_signal_a	tinyint	no	1	3    	0    	yes
+tpl_degree_a	varchar	no	5	     	     	yes
+tpl_signal_b	tinyint	no	1	3    	0    	yes
+tpl_degree_b	varchar	no	5	     	     	yes
+server_time	datetime	no	8	     	     	yes
+tpl_signal_c	tinyint	no	1	3    	0    	yes
+tpl_degree_c	varchar	no	5	     	     	yes
+tpl_signal_d	tinyint	no	1	3    	0    	yes
+tpl_degree_d	varchar	no	5	     	     	yes
+tpl_status	varchar	no	1	     	     	yes
+
+index_name	index_description	index_keys
+IDX_TemperatureTBL_servertime_for_delete	nonclustered located on FG_Data	server_time
+IX02_TemperatureTBL	nonclustered located on FG_Data	tpl_date, server_time(-)
+PK_TemperatureTBL	clustered, unique located on FG_Data	off_key, tid_id, tpl_date, tpl_time
+
+[data_sample]
+off_key	tid_id	tpl_date	tpl_time	tpl_op_code	tpl_x_position	tpl_y_position	tpl_signal_a	tpl_degree_a	tpl_signal_b	tpl_degree_b	server_time	tpl_signal_c	tpl_degree_c	tpl_signal_d	tpl_degree_d	tpl_status
+0001437  	048630862	20260414	064728	39	0.000000	0.000000	0	8.3	0	8.3	2026-04-14 06:47:50.910	1	20.0	1	19.6	
+0001437  	048630862	20260414	065228	39	0.000000	0.000000	0	8.5	0	8.6	2026-04-14 06:52:51.713	1	19.0	1	18.6	
+0001437  	048630862	20260414	065728	39	0.000000	0.000000	0	8.7	0	8.8	2026-04-14 06:57:51.940	1	19.8	1	19.1	
+0001437  	048630862	20260414	070228	39	0.000000	0.000000	0	8.9	0	9.0	2026-04-14 07:02:52.130	1	21.3	1	21.0	
+0001437  	048630862	20260414	070728	39	0.000000	0.000000	0	8.8	0	9.0	2026-04-14 07:07:50.730	1	19.9	1	19.3	
+0001437  	048630862	20260414	071228	39	0.000000	0.000000	0	8.3	0	8.5	2026-04-14 07:12:52.547	1	18.8	1	18.3	
+0001437  	048630862	20260414	071728	39	0.000000	0.000000	0	7.8	0	8.0	2026-04-14 07:17:51.430	1	20.3	1	19.3	
+0001437  	048630862	20260414	072228	39	0.000000	0.000000	0	7.5	0	7.8	2026-04-14 07:22:51.700	1	21.3	1	20.3	
+0001437  	048630862	20260414	072728	39	0.000000	0.000000	0	7.8	0	7.9	2026-04-14 07:27:51.353	1	21.5	1	20.4	
+0001437  	048630862	20260414	073228	39	0.000000	0.000000	0	8.1	0	8.0	2026-04-14 07:32:50.400	1	19.1	1	18.1	
+0001437  	048630862	20260414	073728	39	0.000000	0.000000	0	8.2	0	8.1	2026-04-14 07:37:51.440	1	18.5	1	17.5	
+0001437  	048630862	20260414	074228	39	0.000000	0.000000	0	8.4	0	8.3	2026-04-14 07:42:50.953	1	20.5	1	20.0	
+0001437  	048630862	20260414	074728	39	0.000000	0.000000	0	8.5	0	8.5	2026-04-14 07:47:51.220	1	19.6	1	18.9	
+0001437  	048630862	20260414	075228	39	0.000000	0.000000	0	8.7	0	8.6	2026-04-14 07:52:51.203	1	17.1	1	18.3	
+0001437  	048630862	20260414	075728	39	0.000000	0.000000	0	8.8	0	8.7	2026-04-14 07:57:51.710	1	15.1	1	19.1	
+0001437  	048630862	20260414	080228	39	0.000000	0.000000	0	8.5	0	8.5	2026-04-14 08:02:51.903	1	15.9	1	18.8	
+0001437  	048630862	20260414	080728	39	0.000000	0.000000	0	7.8	0	7.9	2026-04-14 08:07:50.317	1	16.0	1	18.9	
+0001437  	048630862	20260414	081228	39	0.000000	0.000000	0	7.6	0	7.7	2026-04-14 08:12:50.723	1	12.7	1	18.0	
+0001437  	048630862	20260414	081728	39	0.000000	0.000000	0	8.0	0	8.0	2026-04-14 08:17:50.503	1	17.1	1	18.0	
+0001437  	048630862	20260414	082228	39	0.000000	0.000000	0	8.2	0	8.2	2026-04-14 08:22:51.033	1	19.5	1	19.7	
+0001437  	048630862	20260414	082728	39	0.000000	0.000000	0	8.4	0	8.3	2026-04-14 08:27:51.183	1	20.3	1	19.8	
+0001437  	048630862	20260414	083228	39	0.000000	0.000000	0	8.6	0	8.5	2026-04-14 08:32:51.360	1	21.0	1	20.1	
+0001437  	048630862	20260414	083728	39	0.000000	0.000000	0	8.8	0	8.7	2026-04-14 08:37:50.873	1	21.3	1	20.1	
+0001437  	048630862	20260414	084228	39	0.000000	0.000000	0	8.8	0	8.7	2026-04-14 08:42:51.000	1	21.4	1	20.4	
+0001437  	048630862	20260414	084728	39	0.000000	0.000000	0	8.1	0	8.3	2026-04-14 08:47:50.410	1	19.1	1	18.8	
+0001437  	048630862	20260414	085228	39	0.000000	0.000000	0	7.7	0	7.8	2026-04-14 08:52:51.190	1	19.9	1	19.5	
+0001437  	048630862	20260414	085728	39	0.000000	0.000000	0	7.8	0	7.8	2026-04-14 08:57:51.470	1	18.8	1	20.7	
+0001437  	048630862	20260414	090228	39	0.000000	0.000000	0	8.1	0	8.1	2026-04-14 09:02:51.033	1	17.8	1	20.1	
+0001437  	048630862	20260414	091228	39	0.000000	0.000000	0	8.6	0	8.5	2026-04-14 09:12:50.690	1	18.2	1	19.1	
+0001437  	048630862	20260414	091728	39	0.000000	0.000000	0	8.8	0	8.6	2026-04-14 09:17:51.623	1	19.4	1	19.7	
+0001437  	048630862	20260414	092228	39	0.000000	0.000000	0	8.8	0	8.7	2026-04-14 09:22:51.717	1	20.5	1	20.3	
+0001437  	048630862	20260414	092728	39	0.000000	0.000000	0	8.1	0	8.1	2026-04-14 09:27:50.310	1	21.0	1	20.5	
+
+
+2.TemperatureConfigTBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable
+off_key	char	no	9	     	     	no
+tid_id	varchar	no	11	     	     	no
+device_num	char	no	1	     	     	no
+server_time	datetime	no	8	     	     	no
+temp_min	float	no	8	53   	NULL	no
+temp_max	float	no	8	53   	NULL	no
+update_userid	varchar	no	25	     	     	yes
+update_time	datetime	no	8	     	     	yes
+
+index_name	index_description	index_keys
+ix_IndexName	nonclustered located on FG_Data	off_key, tid_id
+PK__Temperat__25B60315CEF62329	clustered, unique, primary key located on FG_Data	device_num, off_key, tid_id
+
+[data_sample]
+off_key	tid_id	device_num	server_time	temp_min	temp_max	update_userid	update_time
+0000990  	223174222	A	2016-11-18 13:42:26.307	-30	25	vis	2016-11-18 13:42:26.307
+0000991  	221451593	A	2017-12-19 15:06:50.997	-30	20		2017-12-19 15:06:50.997
+0001322  	046737698	A	2019-06-19 11:01:27.297	0	25	song7784	2019-06-19 11:01:27.297
+0001322  	059289255	A	2018-02-23 13:26:02.057	0	20	song7784	2018-02-23 13:26:02.057
+0001322  	059359217	A	2019-06-19 11:01:27.297	0	25	song7784	2019-06-19 11:01:27.297
+0001322  	059359218	A	2019-06-19 11:01:27.297	0	25	song7784	2019-06-19 11:01:27.297
+0001322  	059359219	A	2019-06-19 11:01:27.297	0	50	song7784	2025-05-07 08:56:11.603
+0001322  	059359221	A	2019-06-19 11:01:27.297	0	40	song7784	2025-06-09 10:40:50.083
+0001322  	220222279	A	2019-06-19 11:01:27.297	0	40	song7784	2025-05-07 08:56:29.200
+0001322  	220245822	A	2019-06-19 11:01:27.297	0	25	song7784	2019-06-19 11:01:27.297
+0001322  	220335008	A	2019-06-19 11:01:27.297	0	40	song7784	2025-05-07 08:54:24.880
+0001322  	220497736	A	2019-06-19 11:01:27.297	0	25	song7784	2019-06-19 11:01:27.297
+0001322  	233206882	A	2021-03-04 16:47:11.767	0	40	song7784	2025-03-04 07:47:35.780
+0001322  	233246946	A	2021-05-15 09:11:57.673	0	50	song7784	2025-05-07 08:54:58.283
+0001322  	233407735	A	2023-06-08 14:39:01.940	0	40	song7784	2025-03-04 07:47:35.777
+0001322  	236289518	A	2023-06-08 14:29:42.597	0	100	song7784	2025-05-07 08:52:55.567
+0001322  	239205103	A	2023-03-15 18:29:47.280	0	40	song7784	2025-06-09 10:40:40.423
+0001322  	246849180	A	2025-02-05 12:00:34.813	0	40	song7784	2025-06-09 10:40:30.990
+0001322  	246849625	A	2025-03-04 07:45:00.430	0	40	song7784	2025-03-04 07:47:35.780
+0001322  	246849715  	A	2025-02-05 12:00:58.393	0	40	song7784	2025-08-04 13:32:36.690
+0001322  	252213613	A	2025-08-04 07:39:28.653	0	40	song7784	2025-08-04 07:39:28.653
+0001324  	223792172	A	2022-05-27 16:04:26.820	-40	40	kkmkyung	2022-05-27 16:04:26.820
+0001324  	223792417	A	2022-05-27 16:04:26.817	-40	40	kkmkyung	2022-05-27 16:04:26.817
+0001324  	223792461	A	2020-11-13 10:42:13.457	-30	20		2020-11-13 10:42:13.457
+0001324  	223792462	A	2022-05-27 16:04:26.810	-40	40	kkmkyung	2022-05-27 16:04:26.810
+0001324  	223792463	A	2022-05-27 16:04:26.823	-40	40	kkmkyung	2022-05-27 16:04:26.823
+
+3.TemperatureAlarmConfigTBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable
+off_key	varchar	no	7	     	     	no
+tid_id	varchar	no	11	     	     	no
+device_num	char	no	1	     	     	no
+device_type	varchar	no	1	     	     	yes
+issue_temp_adjust	float	no	8	53   	NULL	yes
+issue_persist_time	int	no	4	10   	0    	yes
+issue_step01_repeat	int	no	4	10   	0    	yes
+issue_step01_group	int	no	4	10   	0    	yes
+issue_step01_restore	varchar	no	1	     	     	yes
+issue_step02_repeat	int	no	4	10   	0    	yes
+issue_step02_group	int	no	4	10   	0    	yes
+issue_step02_restore	varchar	no	1	     	     	yes
+server_time	datetime	no	8	     	     	yes
+update_userid	varchar	no	25	     	     	yes
+update_time	datetime	no	8	     	     	yes
+
+index_name	index_description	index_keys
+PK__Temperat__763E4A96A5A67681	clustered, unique, primary key located on FG_Data	off_key, tid_id, device_num
+
+[data_sample]
+off_key	tid_id	device_num	device_type	issue_temp_adjust	issue_persist_time	issue_step01_repeat	issue_step01_group	issue_step01_restore	issue_step02_repeat	issue_step02_group	issue_step02_restore	server_time	update_userid	update_time
+0006480	236285224	A	R	NULL	30	1	3528	Y	0	NULL	Y	2026-03-03 10:33:34.583	dwloex_admin	2026-03-17 14:31:31.857
+0006480	236285224	B	R	NULL	30	1	3528	Y	0	NULL	Y	2026-03-17 14:30:57.847	dwloex_admin	2026-03-17 14:31:31.860
+0006480	236286257	A	R	NULL	30	1	3528	Y	0	NULL	Y	2026-03-03 10:32:39.123	dwloex_admin	2026-03-17 14:31:44.627
+0006480	236286257	B	R	NULL	30	1	3528	Y	0	NULL	Y	2026-03-17 14:30:20.270	dwloex_admin	2026-03-17 14:31:44.633
+0018507	229960133	A	F	NULL	30	1	1416	Y	2	1416	Y	2022-02-17 10:31:25.597	exofresh	2025-04-04 16:14:22.813
+0018507	229960133	B	R	NULL	30	1	1416	Y	2	1416	Y	2022-02-17 10:31:25.597	exofresh	2025-04-04 16:14:22.820
+0018507	229960308	A	F	NULL	30	1	1415	Y	2	1415	Y	2022-02-17 10:32:32.683	exofresh	2025-04-04 16:43:55.320
+0018507	229960308	B	R	NULL	30	1	1415	Y	2	1415	Y	2022-02-17 10:32:32.683	exofresh	2025-04-04 16:43:55.323
+0018507	229960801	A	F	NULL	30	1	1489	Y	2	1489	Y	2022-02-11 13:49:36.797	exofresh	2025-04-04 14:47:40.893
+0018507	229960801	B	R	NULL	30	1	1489	Y	2	1489	Y	2022-02-11 13:49:36.803	exofresh	2025-04-04 14:47:40.913
+0018507	229960889	A	F	NULL	30	1	1488	Y	2	1488	Y	2022-02-17 10:31:46.890	exofresh	2025-04-04 16:10:12.927
+0018507	229960889	B	R	NULL	30	1	1488	Y	2	1488	Y	2022-02-17 10:31:46.893	exofresh	2025-04-04 16:10:12.937
+0018507	233344777	A	F	NULL	30	1	1490	Y	2	1490	Y	2022-02-17 10:33:35.920	exofresh	2025-12-04 08:48:57.917507	233344960	B	R	NULL	30	1	1538	Y	2	1538	Y	2022-03-16 16:13:41.250	exofresh	2025-04-04 15:50:35.173
+
+4.TemperatureAlarmTimeTBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable
+off_key	varchar	no	7	     	     	no
+tid_id	varchar	no	11	     	     	no
+device_num	char	no	1	     	     	no
+alarm_num	int	no	4	10   	0    	no
+alarm_monday	varchar	no	1	     	     	yes
+alarm_tuesday	varchar	no	1	     	     	yes
+alarm_wednesday	varchar	no	1	     	     	yes
+alarm_thursday	varchar	no	1	     	     	yes
+alarm_friday	varchar	no	1	     	     	yes
+alarm_saturday	varchar	no	1	     	     	yes
+alarm_sunday	varchar	no	1	     	     	yes
+alarm_start	varchar	no	4	     	     	yes
+alarm_end	varchar	no	4	     	     	yes
+
+index_name	index_description	index_keys
+PK__Temperat__5AF413263A1292E1	clustered, unique, primary key located on FG_Data	off_key, tid_id, device_num, alarm_num
+
+[data_sample]
+off_key	tid_id	device_num	alarm_num	alarm_monday	alarm_tuesday	alarm_wednesday	alarm_thursday	alarm_friday	alarm_saturday	alarm_sunday	alarm_start	alarm_end
+0018507	233344777	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	233344780	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	233344784	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	233344992	A	1	N	N	N	N	Y	Y	N	0000	2359
+0018507	233344992	B	1	N	N	N	N	Y	Y	N	0000	2359
+0018507	233408091	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	233408098	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	233408323	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	233408323	B	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	236985622	A	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+0018507	236985622	B	1	Y	Y	Y	Y	Y	Y	Y	0000	2359
+
+
+
+5.UVIS_TB_GROUP_CAR
+Column_name	Type	Computed	Length	Prec	Scale	Nullable
+cust_id	varchar	no	14	     	     	no
+grp_id	varchar	no	14	     	     	no
+off_key	varchar	no	9	     	     	no
+cm_key	varchar	no	6	     	     	no
+use_yn	char	no	1	     	     	yes
+cre_dt	datetime	no	8	     	     	yes
+cre_id	varchar	no	50	     	     	yes
+upd_dt	datetime	no	8	     	     	yes
+upd_id	varchar	no	50	     	     	yes
+
+index_name	index_description	index_keys
+IX01_UVIS_TB_GROUP_CAR	nonclustered located on FG_Data	grp_id, off_key
+IX02_UVIS_TB_GROUP_CAR	nonclustered located on FG_Data	off_key, cm_key
+IX03_UVIS_TB_GROUP_CAR	nonclustered located on FG_Data	cust_id, off_key
+IX04_UVIS_TB_GROUP_CAR	nonclustered located on FG_Data	cust_id, off_key, cm_key, use_yn
+PK_UVIS_TB_GROUP_CARMAPPING	clustered, unique, primary key located on FG_Data	cust_id, grp_id, off_key, cm_key
+
+[data_sample]
+cust_id	grp_id	off_key	cm_key	use_yn	cre_dt	cre_id	upd_dt	upd_id
+CI130925001040	GI181129000002	0001040	000020	Y	2019-12-30 17:40:59.257	admin	NULL	NULL
+CI130925001040	GI181129000002	0001040	000021	Y	2019-12-30 17:40:59.257	admin	NULL	NULL
+CI130925001040	GI181129000002	0001040	000022	Y	2019-12-30 17:40:59.257	admin	NULL	NULL
+CI130925001042	GI130925104201	0001042	000293	Y	2022-04-14 08:46:17.860	kn896811	NULL	NULL
+CI130925001042	GI130925104201	0001042	000294	Y	2022-09-16 16:43:29.843	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000295	Y	2022-12-06 16:49:35.043	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000296	Y	2023-02-24 14:15:37.440	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000301	Y	2023-10-28 13:19:16.633	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000302	Y	2024-03-26 13:24:42.183	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000303	Y	2024-04-29 19:00:49.130	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000304	Y	2024-05-22 08:15:56.280	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000305	Y	2024-05-22 08:16:23.883	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000306	Y	2024-05-22 08:16:48.037	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000307	Y	2024-05-22 08:17:06.833	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000309	Y	2024-07-04 13:21:23.310	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000313	Y	2024-12-10 09:08:13.767	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000317	Y	2024-12-23 16:25:36.327	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000319	Y	2025-07-08 12:07:44.143	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000322	Y	2026-01-27 17:48:29.333	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000323	Y	2026-02-06 17:44:36.977	admin1042	NULL	NULL
+CI130925001042	GI130925104201	0001042	000326	Y	2026-04-07 16:38:02.880	admin1042	NULL	NULL
+CI130925001042	GI130925104202	0001042	000089	Y	2025-05-15 12:52:54.200	admin1042	NULL	NULL
+CI130925001042	GI130925104202	0001042	000102	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000201	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000205	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000207	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000208	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000209	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000212	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000213	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000219	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000220	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+CI130925001042	GI130925104202	0001042	000221	Y	2021-09-29 13:56:58.757	admin	NULL	NULL
+
+
+6.UVIS_TB_GROUP_USER
+Column_name	Type	Computed	Length	Prec	Scale	Nullable
+cust_id	varchar	no	14	     	     	no
+grp_id	varchar	no	14	     	     	no
+off_key	varchar	no	9	     	     	no
+i_userid	varchar	no	50	     	     	no
+use_yn	char	no	1	     	     	yes
+cre_dt	datetime	no	8	     	     	no
+cre_id	varchar	no	50	     	     	no
+upd_dt	datetime	no	8	     	     	yes
+upd_id	varchar	no	50	     	     	yes
+
+index_name	index_description	index_keys
+IX01_UVIS_TB_GROUP_USER	nonclustered located on FG_Data	cust_id, i_userid
+IX02_UVIS_TB_GROUP_USER	nonclustered located on FG_Data	i_userid
+PK_UVIS_TB_GROUP_USERMAPPING	clustered, unique, primary key located on FG_Data	cust_id, grp_id, off_key, i_userid
+
+[data_sample]
+cust_id	grp_id	off_key	i_userid	use_yn	cre_dt	cre_id	upd_dt	upd_id
+CI100119000000	GI180601000004	0000989	schoolbustest	Y	2019-12-30 18:37:05.677	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	bizadmin	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	bohyeon2.kim	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	ch2316.park	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	chung.nam	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	d.h.ji	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	demoadmin	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	dk1842.lee	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	dm82.jung	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	dw1121.jung	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	dw7.lim	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	ek191.lee	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	haksik.kim	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+CI130925000902	GI130925000902	0000902	hanks	Y	2021-07-07 17:50:52.970	admin	NULL	NULL
+
+
+7.CARMASTERTBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation
+off_key	varchar	no	9	     	     	no	no	no	Korean_Wansung_CI_AS
+cm_key	varchar	no	6	     	     	no	no	no	Korean_Wansung_CI_AS
+tid_id	varchar	no	11	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_number	varchar	no	30	     	     	no	no	no	Korean_Wansung_CI_AS
+dri_idx	int	no	4	10   	0    	yes	(n/a)	(n/a)	NULL
+cm_ton_seater	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_class	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_produce	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_op_flag	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_rent_flag	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_year	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_grade	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_status	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_del_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+cm_reg_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_reg_id	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_mod_date	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_mod_id	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_file1	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_file2	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_file3	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_carname	varchar	no	30	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_car_reg_date	char	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_car_check_date	char	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tr_key	int	no	4	10   	0    	yes	(n/a)	(n/a)	NULL
+cm_insu_info	varchar	no	10	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_comment	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+shuttle_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tid_cell_no	varchar	no	30	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_takeuser	nvarchar	no	100	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_gubun	char	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_num	char	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_weight	char	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+refrigentation_gubun	char	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_card_grade	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_card_expiration	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+volt_config_value	float	no	8	53   	NULL	yes	(n/a)	(n/a)	NULL
+cm_mod	varchar	no	2	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_disp	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+fuel_kind	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_color	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_gear_type	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tms_use_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_gubun	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+i_userid	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_erp_reg	varchar	no	2	     	     	yes	no	yes	Korean_Wansung_CI_AS
+cm_erp_reg_date	datetime	no	8	     	     	yes	(n/a)	(n/a)	NULL
+rmk	varchar	no	4000	     	     	yes	no	yes	Korean_Wansung_CI_AS
+ins_company	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+ins_join_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_reg_agent	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_reg_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_idnum	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+rent_comment	varchar	no	4000	     	     	yes	no	yes	Korean_Wansung_CI_AS
+rent_comment_date	datetime	no	8	     	     	yes	(n/a)	(n/a)	NULL
+work_start_time	varchar	no	4	     	     	yes	no	yes	Korean_Wansung_CI_AS
+work_end_time	varchar	no	4	     	     	yes	no	yes	Korean_Wansung_CI_AS
+work_monday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_tuesday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_wednesday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_thursday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_friday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_saturday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+work_sunday_yn	nchar	no	2	     	     	yes	(n/a)	(n/a)	Korean_Wansung_CI_AS
+cm_model	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+ble_naming	varchar	no	10	     	     	yes	no	yes	Korean_Wansung_CI_AS
+insurance_provide	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+fuel_memo	varchar	no	200	     	     	yes	no	yes	Korean_Wansung_CI_AS
+
+index_name	index_description	index_keys
+IX_CARMASTER_OFF_DEL_REG	nonclustered located on FG_Data	off_key, cm_del_flag, cm_reg_date(-)
+IX_CarMasterTBL_01	nonclustered located on FG_Data	tid_id, off_key, cm_del_flag, cm_key
+IX_CarMasterTBL_02	nonclustered located on FG_Data	cm_del_flag
+IX_CarMasterTBL_03	nonclustered located on FG_Data	off_key, tid_id
+IX_CarMasterTBL_04	nonclustered located on FG_Data	cm_del_flag, tid_id
+IX_CarMasterTBL_05	nonclustered located on FG_Data	cm_number, cm_del_flag
+PK__CarMasterTBL__6DB73E6A	clustered, unique, primary key located on FG_Data	off_key, cm_key
+
+[data_sample]
+off_key	cm_key	tid_id	cm_number	dri_idx	cm_ton_seater	cm_class	cm_produce	cm_op_flag	cm_rent_flag	cm_year	cm_grade	cm_status	cm_del_flag	cm_reg_date	cm_reg_id	cm_mod_date	cm_mod_id	cm_file1	cm_file2	cm_file3	cm_carname	cm_car_reg_date	cm_car_check_date	tr_key	cm_insu_info	cm_comment	shuttle_flag	tid_cell_no	cm_takeuser	work_gubun	car_num	cm_weight	refrigentation_gubun	cm_card_grade	cm_card_expiration	volt_config_value	cm_mod	car_disp	fuel_kind	car_color	cm_gear_type	tms_use_flag	cm_gubun	i_userid	cm_erp_reg	cm_erp_reg_date	rmk	ins_company	ins_join_date	car_reg_agent	car_reg_date	car_idnum	rent_comment	rent_comment_date	work_start_time	work_end_time	work_monday_yn	work_tuesday_yn	work_wednesday_yn	work_thursday_yn	work_friday_yn	work_saturday_yn	work_sunday_yn	cm_model	ble_naming	insurance_provide	fuel_memo
+0000902	000077	010035252	경기96자5252	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	20130930	SYSTEM				경기96자5252	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+0000902	000078	010035262	경기95사5262	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	20130930	SYSTEM				경기95사5262	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+0000902	000079	010035267	경기94아5267	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	20130930	SYSTEM				경기94아5267	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+0000902	000080	010035271	서울95사5271	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	2016-01-25 16:04:43	wg6415.park				서울95사5271	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Y	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+0000902	000081	010035281	경기92아5281	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	20130930	SYSTEM				경기92아5281	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+0000902	000082	010035318	경기92바5318	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	20130930	SYSTEM				경기92바5318	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+0000902	000083	010035319	경기95사5319	0	2	128003	134006	NULL	129002	201307	120002	121001	1	20140515	user04	20130930	SYSTEM				경기95사5319	NULL	NULL	NULL	NULL	NULL	 		NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+
+8.TERMINALIDTBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation
+tid_id	varchar	no	11	     	     	no	no	no	Korean_Wansung_CI_AS
+off_key	varchar	no	9	     	     	no	no	no	Korean_Wansung_CI_AS
+tid_ver	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tid_cell_no	varchar	no	30	     	     	no	no	no	Korean_Wansung_CI_AS
+tid_set_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tid_update_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tid_use_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+card_use_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+taco_use_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+sensor_key_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+sensor_door_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+sensor_impact_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+sensor_temp_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+car_model_code	char	no	9	     	     	yes	no	yes	Korean_Wansung_CI_AS
+
+index_name	index_description	index_keys
+IX_TerminalIDTBL_01	nonclustered located on FG_Data	tid_cell_no, off_key
+IX_TerminalIDTBL_02	nonclustered located on FG_Data	off_key, tid_use_flag
+IX_TID_USE_FLAG	nonclustered located on FG_Data	tid_use_flag, off_key, tid_id
+IX01_TerminalIDTBL	nonclustered located on FG_Data	off_key, tid_id
+PK_TerminalIDTBL	clustered, unique, primary key located on FG_Data	tid_id, tid_cell_no, off_key
+
+[data_sample]
+tid_id	off_key	tid_ver	tid_cell_no	tid_set_date	tid_update_date	tid_use_flag	card_use_flag	taco_use_flag	sensor_key_flag	sensor_door_flag	sensor_impact_flag	sensor_temp_flag	car_model_code
+002690393	0006103	NULL	002690393	20180322	20180322	1	9	9	9	9	9	9	NULL
+010001001	0000900  		010001001		20130306	1	9	1	9	9	9	9	NULL
+010001002	0000900  		010001002		20130306	1	9	1	9	9	9	9	NULL
+010001003	0000900  		010001003		20130306	1	9	1	9	9	9	9	NULL
+010001004	0000900  		010001004		20130306	1	9	1	9	9	9	9	NULL
+010001005	0000900  		010001005		20130306	1	9	1	9	9	9	9	NULL
+010001006	0000900  		010001006		20130306	1	9	1	9	9	9	9	NULL
+010001007	0000900  		010001007		20130306	1	9	1	9	9	9	9	NULL
+010001008	0000900  		010001008		20130306	1	9	1	9	9	9	9	NULL
+010001009	0000900  		010001009		20130306	1	9	1	9	9	9	9	NULL
+010001010	0000900  		010001010		20130306	1	9	1	9	9	9	9	NULL
+010001011	0000900  		010001011		20130306	1	9	1	9	9	9	9	NULL
+010001012	0000900  		010001012		20130306	1	9	1	9	9	9	9	NULL
+010001013	0000900  		010001013		20130306	1	9	1	9	9	9	9	NULL
+010001014	0000900  		010001014		20130306	1	9	1	9	9	9	9	NULL
+010001015	0000900  		010001015		20130306	1	9	1	9	9	9	9	NULL
+010001016	0000900  		010001016		20130306	1	9	1	9	9	9	9	NULL
+010001017	0000900  		010001017		20130306	1	9	1	9	9	9	9	NULL
+010001018	0000900  		010001018		20130306	1	9	1	9	9	9	9	NULL
+010001019	0000900  		010001019		20130306	1	9	1	9	9	9	9	NULL
+010001020	0000900  		010001020		20130306	1	9	1	9	9	9	9	NULL
+
+
+9.drivertbl
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation
+off_key	char	no	9	     	     	no	no	no	Korean_Wansung_CI_AS
+dri_idx	int	no	4	10   	0    	no	(n/a)	(n/a)	NULL
+cm_key	char	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_name	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_regino	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_tel	varchar	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_cel	varchar	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_join_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_leave_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_zip	char	no	7	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_add1	varchar	no	80	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_add2	varchar	no	120	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_del_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_reg_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_reg_id	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_mod_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_mod_id	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_photo	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+n_passwd	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_num	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_cel_code	varbinary	no	255	     	     	yes	no	yes	NULL
+dri_tel_code	varbinary	no	255	     	     	yes	no	yes	NULL
+dri_driver_code	varchar	no	18	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_device_type	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+i_userid	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+n_mail	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_birth	varchar	no	10	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_br_key	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_br_id	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_br_off_name	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_br_enter_date	varchar	no	10	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_br_biz_type	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+is_smartkey	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_br_dept_name	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+memo_rm_name	varchar	no	2000	     	     	yes	no	yes	Korean_Wansung_CI_AS
+dri_name_sec	varbinary	no	256	     	     	yes	no	yes	NULL
+dri_birth_sec	varbinary	no	256	     	     	yes	no	yes	NULL
+
+index_name	index_description	index_keys
+idx001_DriverTBL	nonclustered located on FG_Data	dri_del_flag, dri_idx
+IX02_DriverTBL	nonclustered located on FG_Data	dri_idx
+PK__DriverTBL__727BF387	clustered, unique, primary key located on FG_Data	off_key, dri_idx
+
+[data_sample]
+off_key	dri_idx	cm_key	dri_name	dri_regino	dri_tel	dri_cel	dri_join_date	dri_leave_date	dri_zip	dri_add1	dri_add2	dri_del_flag	dri_reg_date	dri_reg_id	dri_mod_date	dri_mod_id	dri_photo	n_passwd	dri_num	dri_cel_code	dri_tel_code	dri_driver_code	dri_device_type	i_userid	n_mail	dri_birth	dri_br_key	dri_br_id	dri_br_off_name	dri_br_enter_date	dri_br_biz_type	is_smartkey	dri_br_dept_name	memo_rm_name	dri_name_sec	dri_birth_sec
+0001025  	157361	      	이영무	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	9	20241125	admin1025	20250905	admin1025	NULL	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000000B0FB69F23CC141A81CFACFA596A1B7668627A384004A57897CE931C51160182D646BC6C17E0E8E739DE22571946EA44	NULL	NULL		NULL	1983-06-08	01783	01981431	열린고속관광	2024-11-15	전세버스	N		1	0x00439072ACA99F9670FC690B0629B552020000000B946AACA06628D8207CFD66E4B1026BD0BA16B5BFB1E73CB31AAAD6010E034B	0x00439072ACA99F9670FC690B0629B552020000000EBB32CE75914AAF5896EBBE888BD3C65EE23B7059A44B02F66F1325C5F38A7BEB6ED80EF588E93906540096FFF8D9CD
+0001025  	157362	000052	박영용	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	1	20241125	admin1025	20260303	admin1025	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000008C4FC5DFDA669E04A4028C5A7DA892029013938C4B72325984D991817A3E9E2EEBE55D247114B9AC4F68219484C7BC06	0x00439072ACA99F9670FC690B0629B55202000000C068981C4044709D8B6E9067834E1C1A73D8F54652ED2606DEF00592E7D409398AFB8DEB674197D688CA8BE5837C18CB		 		NULL	1958-09-18	01783	0083754	열린고속관광	2024-11-20	전세버스	N			0x00439072ACA99F9670FC690B0629B55202000000541735F2234AEF0DA1F02A29E0E2F5C05DE07DEBC62441EF67196FB9505D491B	0x00439072ACA99F9670FC690B0629B55202000000B1241DD898E2BDB1DA439C18E5DBA153D8C07831C75966A57393A47D8D1ED7404981C7CE9A5C4BFED3719398496E15DE
+0001025  	158158	000044	권영영	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	9	20241213	admin1025	20260311	admin1025	NULL	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000004165E910025669D315BFE4178503BA6905EFFEE87C764ADA2940FB12F408A2A3FF0EFCA0F4D989F7C7AE92ACC64ADB94	NULL	NULL		NULL	1962-05-20	01783	00900116	열린고속관광	2024-12-13	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B55202000000B26482065461DAAE3FD659C11E40215A76D05E55819847608227BAA62661869D	0x00439072ACA99F9670FC690B0629B55202000000331FD3C8CCFB0728947EECD193AB2E94E05C2AF6C7C99D4BA0C375B399B3583B16C5D23E6F6E5BD9B481791FC3D90C4E
+0001025  	158159	000065	김영훈	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	1	20241213	admin1025	20251203	admin1025	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000003C40B116CE524E81C12FBDF5D19F9ADC49CDC7E835C3A1E11F19146DF7F8598C7620772EB28E2F18BD4631B8BD4A9A0D	0x00439072ACA99F9670FC690B0629B55202000000951E35EB4D88D58FB6FCDE14D010950BA8CF8DE2389E7DB3639E081054FFF01BA23E2D0880AFFDBAB1832741CD218B77		 		NULL	1966-01-08	01783	01083010	열린고속관광	2024-12-13	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B552020000002CF14319D33429EB91A5AEFF610B7536C4F31BD27E9F19E225ADAF337089D179	0x00439072ACA99F9670FC690B0629B5520200000080A5A8847B82ECEF741F30C52F8AF9FC51204EBEDDF34505E6228BA4A22C9B703E1C9B6AC94B516A4D8E2EA659B45BBD
+0001025  	161609	      	최영근	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	9	20250312	admin1025	20260311	admin1025	NULL	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000001B3E7892C9807904D0F5288A207D0C24F3026543A88FA144334F72285822DC57AA5F86EF31A18C7FF42B9A8B090D38A0	NULL	NULL		NULL	1956-09-05	01783	00524143	열린고속관광	2025-03-01	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B55202000000C0AD47D78834CCE5D390671A3904B45F8A7F40024C2B0D352B35C926BFBE5F71	0x00439072ACA99F9670FC690B0629B55202000000129A62C1F629AABABE4D5A34F7926715A6B4FF8D804706DDC7F55C083F376885BA3DB8993B8A09F8B6065B138BBA955A
+0001025  	161619	000067	백영준	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	1	20250312	admin1025	20251203	admin1025	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B55202000000E050184C2FA230EC719C8D33320010B7F367DF43282555759775CC81C88916B1D67ACD936D8A61D58E938E7961B54826	0x00439072ACA99F9670FC690B0629B55202000000BA3A33CD6A5A729B6FA38B8582ED36D3B99CFD57BBD93E115F021213DB2C7FE44E7AFDFDCDD4A4C1E415A9ED2A30CB16		 		NULL	1966-09-30	01783	02201463	열린고속관광	2025-03-01	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B55202000000D60442A522A7AEBA4954A75F3DE55CCB247841BDF127444CDC1A72605F66571D	0x00439072ACA99F9670FC690B0629B55202000000003C40A22D3A1BDFF0BD39C58310E333D5DDBCBD0186BC684537BDC28DE3F56908161E02D5EEF8CE185532A7F7664530
+0001025  	161621	000066	남영우	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	1	20250312	admin1025	20251203	admin1025	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B5520200000072065F19E37F3E17E06311FCD635C858ACCD243AC5773B1AE1719282A81AFD6B1777DDF27A7FBD2350B0937AC53432FE	0x00439072ACA99F9670FC690B0629B552020000009757A85423F8938BDC01B0EFC25D7CE19B25E08227DA834AC101C503FB556D1B192F3266EC1C505751D847458B652606		 		NULL	1960-01-02	01783	02205250	열린고속관광	2025-03-01	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B552020000008AB73DCBC07407D0E3052EA6E1D918A20AF4C3D3BC104AAF6A9A6C8F96B0A3A4	0x00439072ACA99F9670FC690B0629B55202000000EB2628097225D527F71E0C53DD5B62E0208F943BB7C6241978D158727C861545786B9523EBF66FE7E0ECE4D7E288E57A
+0001025  	161651	      	임영남	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	9	20250313	admin1025	20251010	admin1025	NULL	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000003CFDA51BA3505FB2D7A0140084BCE544D822330ABC139A82F9B55EE4AC70C97A84D2A69AC85239DA44107F87ACE04E9D	NULL	NULL		NULL	1961-03-27	01783	00832868	열린고속관광	2025-03-12	전세버스	N		1	0x00439072ACA99F9670FC690B0629B55202000000724CFDF2FE534D1F16268ED974F1AB17A8A6DAF11EE67926786753BD4CA93A83	0x00439072ACA99F9670FC690B0629B55202000000B58E3E002EFD12CD9186689F6F8334A1D3FD8743A685C5C5F6E0777DC2AAD043BFFBC61DCEBECE4891BE105C6C22F2E2
+0001025  	161652	      	김영범	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	9	20250313	admin1025	20251021	admin1025	NULL	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000006D62D2E0D969614086EB94DF8B7EA19565F1F6B4DED5C33C7706CFDE123FA56B7090146B5DFB0A932FAE19F8E73CCF9C	NULL	NULL		NULL	1945-12-26	01783	00162172	열린고속관광	2025-03-12	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B55202000000ACB535F1F4ACCD926C3184209EB6B32127CBCDF1CBD45C6F376FE98FC6293AF4	0x00439072ACA99F9670FC690B0629B552020000000EE62AAD642B546068F268734BE3293073F497162FE98BCAA9B6D11202A181C375B288D918960FE69400B8D1DA836EAF
+0001025  	161653	      	김영구	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	9	20250313	admin1025	20251021	admin1025	NULL	NULL	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000001C72E25B9FB79A7B1C4A997D75595F94E5E0E288CE1F925143E93429C9EF3B326001E4FF411B8229C91909D256E3AB56	NULL	NULL		NULL	1951-05-17	01783	00298163	열린고속관광	2025-03-12	전세버스	N		NULL	0x00439072ACA99F9670FC690B0629B55202000000BB348FE9F628451BB5745390F74CB22C38DE25096CBBD62EA9B50D5620CC1491	0x00439072ACA99F9670FC690B0629B552020000006C9CD864A2BDE83860557D76C3195E5975CDBB1194F462D482EBA3EB805719DE2508943DD926027F2D137377D8BF414C
+
+
+10.OFFICETBL
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation
+off_key	varchar	no	9	     	     	no	no	no	Korean_Wansung_CI_AS
+off_name	varchar	no	60	     	     	no	no	no	Korean_Wansung_CI_AS
+off_tel	char	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_fax	char	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_staff_name	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_staff_tel	char	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_staff_cel	char	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+OFF_DEL_FLAG	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_reg_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_reg_id	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_mod_date	varchar	no	8	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_mod_id	varchar	no	20	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_file1	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_file2	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_file3	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_valuation	int	no	4	10   	0    	no	(n/a)	(n/a)	NULL
+off_car_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_type_flag	char	no	6	     	     	no	no	no	Korean_Wansung_CI_AS
+off_group_flag	varchar	no	6	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_x_pos	varchar	no	255	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_y_pos	varchar	no	255	     	     	yes	no	yes	Korean_Wansung_CI_AS
+etas_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+fuel_standard	smallint	no	2	5    	0    	yes	(n/a)	(n/a)	NULL
+temperature_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+magnet_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+fuel_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+temperature4ch_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+default_car_type	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geofence_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+update_date	datetime	no	8	     	     	yes	(n/a)	(n/a)	NULL
+update_id	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+volt_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+GEOFENCE_NOTI_FLAG	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+secomcard_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+notify_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+cust_cd	varchar	no	10	     	     	yes	no	yes	Korean_Wansung_CI_AS
+map_usable	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+emergency_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+low_batt_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+main_switch_yn	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+etas_auto_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+breaktime_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+eco_3g_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+carledger_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+tpms_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geoorder_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+ecostandardview_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+electric_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+driver_auto_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+group_level	int	no	4	10   	0    	yes	(n/a)	(n/a)	NULL
+evc_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+breathalyzer_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geoplaceapi_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geocontact_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+max_count	int	no	4	10   	0    	yes	(n/a)	(n/a)	NULL
+realtimeoption	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+stationnoti_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+worktime_obd_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geodetail_yn	varchar	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+realtimetemp_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+if_date	datetime	no	8	     	     	yes	(n/a)	(n/a)	NULL
+realstoragetemp_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+deliveryschedule_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geooverspeed_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+insuranceprovide_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+safeschoolbus_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+etasautoexception_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+off_nomask_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+terminalalarm_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+temp4ch_alarm_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+safedriving_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+longtimenosignal_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+terminalsetup_flag	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+emergencyservice_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+geoleave_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+harbor_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+large_customer_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+disablejoin_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+alltempexcel_yn	char	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+lift_yn	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+overspeedsms_yn	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+qr_secomcard_flag	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+off_staff_tel_sec	varbinary	no	256	     	     	yes	no	yes	NULL
+off_staff_cel_sec	varbinary	no	256	     	     	yes	no	yes	NULL
+off_tel_sec	varbinary	no	256	     	     	yes	no	yes	NULL
+off_staff_name_sec	varbinary	no	256	     	     	yes	no	yes	NULL
+
+index_name	index_description	index_keys
+idx002_OfficeTBL	nonclustered located on FG_Data	OFF_DEL_FLAG, GEOFENCE_NOTI_FLAG
+idx003_OfficeTBL	nonclustered located on FG_Data	OFF_DEL_FLAG, GEOFENCE_NOTI_FLAG, off_key
+IX_GEOFENCE_NOTI_FLAG	nonclustered located on FG_Data	GEOFENCE_NOTI_FLAG, OFF_DEL_FLAG, off_key
+ix_IndexName	nonclustered located on FG_Data	OFF_DEL_FLAG
+PK__OfficeTBL__7DEDA633	clustered, unique, primary key located on FG_Data	off_key
+
+[data_sample]
+off_key	off_name	off_tel	off_fax	off_staff_name	off_staff_tel	off_staff_cel	OFF_DEL_FLAG	off_reg_date	off_reg_id	off_mod_date	off_mod_id	off_file1	off_file2	off_file3	off_valuation	off_car_flag	off_type_flag	off_group_flag	off_x_pos	off_y_pos	etas_flag	fuel_standard	temperature_flag	magnet_flag	fuel_flag	temperature4ch_flag	default_car_type	geofence_flag	update_date	update_id	volt_flag	GEOFENCE_NOTI_FLAG	secomcard_flag	notify_flag	cust_cd	map_usable	emergency_flag	low_batt_flag	main_switch_yn	etas_auto_flag	breaktime_flag	eco_3g_flag	carledger_flag	tpms_yn	geoorder_yn	ecostandardview_yn	electric_yn	driver_auto_yn	group_level	evc_yn	breathalyzer_yn	geoplaceapi_yn	geocontact_yn	max_count	realtimeoption	stationnoti_yn	worktime_obd_yn	geodetail_yn	realtimetemp_yn	if_date	realstoragetemp_yn	deliveryschedule_yn	geooverspeed_yn	insuranceprovide_yn	safeschoolbus_yn	etasautoexception_yn	off_nomask_yn	terminalalarm_flag	temp4ch_alarm_flag	safedriving_flag	longtimenosignal_flag	terminalsetup_flag	emergencyservice_yn	geoleave_yn	harbor_yn	large_customer_yn	disablejoin_yn	alltempexcel_yn	lift_yn	overspeedsms_yn	qr_secomcard_flag	off_staff_tel_sec	off_staff_cel_sec	off_tel_sec	off_staff_name_sec
+000000304	덕산실업	02-000-0018   	--            		              	NULL	9	20061020	admin	20061213	test200	임시.txt	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	0x00439072ACA99F9670FC690B0629B5520200000002E59EB0DBE0DF711C8974F1150688F630562C1011A27D127DDCE739EAC8C7F7B76FB4EC97D012501B4997E6C9D7DC3C	NULL	0x00439072ACA99F9670FC690B0629B552020000005F0B08C5A6797660A87AD909C8FBCED0E5A9DD6342BC67B54166EB871ADA73CAAF305F3BB276A12DD0CE1BE5D48DEE74	0x00439072ACA99F9670FC690B0629B5520200000040E80C5DB1949C6408C202A64E39CBFB0ECF33A3E878D745F1A2492E180F2A73
+000000308	인바이오텍	02-000-0022   	--            		              	NULL	9	20061020	admin	20130125	bh68.choi	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	Y	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	0x00439072ACA99F9670FC690B0629B55202000000CA8BDBDC72DA2EEDC443EE55D00037479C49EF1BB39F8A86D2C18F177865762D1A7FC32C3DCAFB297BE234020DAC9600	NULL	0x00439072ACA99F9670FC690B0629B55202000000EC62BB889D24C18EE34C1AF72DE441E1A03046795E8AC22E420A3EDFD2DA3AC267B6F1583BE9AECF9CC2F4DFE29497F8	0x00439072ACA99F9670FC690B0629B55202000000F5FCF3E8A8E3065575659C0738A1F531A6E2EF1EFF7AD23AD8D628E95AC2B765
+000000310	하나환경	02-000-0024   	--            		              	NULL	9	20061020	admin	20100929	esh	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	0x00439072ACA99F9670FC690B0629B55202000000B088C7E100AFE83D8A4C9A87DC33CAB451C4E4561C92062D56BB2BEC1A4E7F412CC201B57671E18F0AEE507C8C96CF62	NULL	0x00439072ACA99F9670FC690B0629B5520200000024BC1B9F3BB70ACD5C6732E7352DF7F42D7869329567FFC018E73EFB288C176C963FB77245F0107DDDBECB937792DC80	0x00439072ACA99F9670FC690B0629B5520200000066ED322F710382C6B6025477368699C7B41346C676A3B4015961CAEF5677CFDB
+000000311	신아환경개발	02-000-0025   	NULL	NULL	NULL	NULL	9	20061020	admin	20130318	admin0003	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	NULL	NULL	0x00439072ACA99F9670FC690B0629B552020000005C0A571B9B401444FF7274610D88E00A3FCE30079EBCC4F8336F1777181FCAF81485F3B714BB09E1865FC4D9D8270377	NULL
+000000315	성림산업	02-000-0029   	NULL	NULL	NULL	NULL	9	20061020	admin	NULL	NULL	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	NULL	NULL	0x00439072ACA99F9670FC690B0629B55202000000C00AFF457B38BC33846C6A357E0D37C84DD62AB92E1B9C3812B9474F0990DBFD04254170C32B13189F5AEAC9DFD31F13	NULL
+000000318	보림산업	02-000-0032   	--            		              	NULL	9	20061020	admin	20110915	bh68.choi	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	0x00439072ACA99F9670FC690B0629B55202000000FF300D8D31EA7FE4699C229B52B02A51FD4D7BCDB61845FFAD989C0B1509F30EE61A671A21A7EE79F36C83E36C323533	NULL	0x00439072ACA99F9670FC690B0629B5520200000022FB85976CF8A969D354EF7F87E16A9C5808BAD2C53A649D9CA04F253E53FC51F99E84B144A8CF76FFBA88A68556D138	0x00439072ACA99F9670FC690B0629B55202000000F8114A58A174D0426E18DF2672A707E9013F3E8F91D4D75FE23B02CF9B0FF0B0
+000000325	재원산업	02-000-0036   	3-3-3         	3	NULL	NULL	9	20070202	komd_waste	NULL	NULL	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	NULL	NULL	0x00439072ACA99F9670FC690B0629B55202000000F2ED5C801FC035A02F22DF056BACACB3DADEC533CF7A86232FA2736D7770872105707EBE7E8AE7D8D10C57E1455922B8	0x00439072ACA99F9670FC690B0629B55202000000FB955E7D78A48C3422C882DFC8D0C1EF96588A3EC9A4DCB86197F30DFBEC9D79
+000000330	중부산업	031-356-8551  	--            	김용권	              	NULL	9	20070828	esh	20120821	esh	NULL	NULL	NULL	0	0	420003		NULL	NULL	Y	3	N	N	N	N	1	Y	NULL	09 30 2014  4:53PM	N	N	N	N	NULL	N	N	N	N	N	N	N	N	N	N	N	N	N	NULL	NULL	NULL	NULL	NULL	9999	1	NULL	NULL	N	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	N	N	N	0x00439072ACA99F9670FC690B0629B552020000004AD4A203AADA353467BF9B484387DFD2B1DB805A1AB860204692EC6266CA4777D37758727516046F28230BD12923D0A4	NULL	0x00439072ACA99F9670FC690B0629B5520200000097D82BDE9B61C60D897379641BD3263451F80FF236FE028EFC1A08B66D34F2F6E96CA16D33F26C2A035625E69FF11F43	0x00439072ACA99F9670FC690B0629B5520200000017E68E68EE979FD58EDC4F283610A9EB35C2D60647984E233A39BF0EC23450E5
+
+11.CustomerOfficeRel
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation
+cust_id	varchar	no	14	     	     	no	no	no	Korean_Wansung_CI_AS
+off_key	varchar	no	9	     	     	no	no	no	Korean_Wansung_CI_AS
+del_yn	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+server_time	datetime	no	8	     	     	no	(n/a)	(n/a)	NULL
+update_date	datetime	no	8	     	     	no	(n/a)	(n/a)	NULL
+update_userid	varchar	no	50	     	     	no	no	no	Korean_Wansung_CI_AS
+farm_id	varchar	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+
+index_name	index_description	index_keys
+ix_IndexName	nonclustered located on FG_Data	off_key, del_yn
+Ix01_CustomerOfficeRel	nonclustered located on FG_Data	off_key, farm_id, del_yn
+PK_CustomerOfficeRel	clustered, unique, primary key located on FG_Data	cust_id, off_key
+
+[data_sample]
+CI100708000015	0000015	N	2017-06-22 00:00:00.000	2017-06-22 00:00:00.000	SYSTEM이관	FZ000000005011
+CI100708000016	0000016	N	2017-06-22 00:00:00.000	2017-06-22 00:00:00.000	SYSTEM이관	FZ000000005011
+CI100708000017	0000017	N	2017-05-17 00:00:00.000	2017-05-17 00:00:00.000	SYSTEM이관	FZ000000005011
+CI100712000001	0000042	N	2017-07-12 18:28:11.863	2017-07-12 18:28:11.863	hs153.yoo	FZ000000005011
+CI100725000001	0000035	N	2017-07-25 00:00:00.000	2017-07-25 00:00:00.000	SYSTEM이관	FZ000000005011
+CI100725000002	0000004	N	2017-07-25 00:00:00.000	2017-07-25 00:00:00.000	SYSTEM이관	FZ000000005011
+CI100725000003	0000005	N	2017-07-25 00:00:00.000	2017-07-25 00:00:00.000	SYSTEM이관	FZ000000005011
+CI101127000001	0000041	N	2017-06-22 00:00:00.000	2017-06-22 00:00:00.000	SYSTEM이관	FZ000000005011
+CI130708000013	0000013	N	2016-12-13 09:40:52.433	2016-12-13 09:40:52.433	SYSTEM	FZ000000005013
+CI130708000021	0000021	N	2017-05-17 00:00:00.000	2017-05-17 00:00:00.000	SYSTEM이관	FZ000000005011
+CI130708000025	0000025	N	2013-07-08 18:09:40.113	2013-07-08 18:09:40.113	SYSTEM	FZ000000005013
+CI130708000026	0000026	N	2017-05-17 00:00:00.000	2017-05-17 00:00:00.000	SYSTEM이관	FZ000000005011
+
+12.UVIS_VW_GROUP (VIEW)
+CREATE VIEW [dbo].[UVIS_VW_GROUP]
+AS
+SELECT L1.CUST_ID,
+       L1.P_GRP_ID,
+       L1.GRP_NAME as P_GRP_NAME,
+       L2.GRP_LEVEL,
+       L2.GRP_ID,
+       L2.GRP_NAME,
+       L2.WORK_START,
+       L2.WORK_FINISH,
+       L2.GRP_RMK,
+       L2.TEMPERATURE_FLAG,
+       L2.ADDR1,
+       L2.ADDR2,
+       L2.CALL_NUMBER
+FROM   UVIS_TB_GROUP L1 WITH(nolock)
+       LEFT OUTER JOIN UVIS_TB_GROUP L2 WITH(nolock)
+                    ON L1.CUST_ID = L2.CUST_ID
+                       AND L1.GRP_ID = L2.P_GRP_ID
+                       AND L1.USE_YN = 'Y'
+                       AND L1.GRP_LEVEL = 1
+WHERE  L1.GRP_LEVEL = '1'
+       AND L1.USE_YN = 'Y' 
+GO
+
+[data_sample]
+cust_id	p_grp_id	p_grp_name	grp_level	grp_id	grp_name	work_start	work_finish	grp_rmk	temperature_flag	addr1	addr2	call_number
+CI130925001026	GI150710000004	기타	1	GI150710000004	기타	0000	2400		NULL	NULL	NULL	NULL
+CI130925001026	GI150710000005	기타	1	GI150710000005	기타	0000	2400		NULL	NULL	NULL	NULL
+CI130925001026	GI171115000002	옵티칼 통근	1	GI171115000002	옵티칼 통근	0000	2400		NULL	NULL	NULL	NULL
+CI130925001026	GI180330000021	도레이BSF	1	GI180330000021	도레이BSF	0630	2400		NULL	NULL	NULL	NULL
+CI130925001026	GI180331000001	도레이 통근	1	GI180331000001	도레이 통근	0000	2400		NULL	NULL	NULL	NULL
+CI130925001026	GI180425000008	육일 C&S	1	GI180425000008	육일 C&S	0000	2400		NULL	NULL	NULL	NULL
+CI130925001026	GI180724000004	아바텍	1	GI180724000004	아바텍	0000	2400		NULL	NULL	NULL	NULL
+CI130925001030	GI130925001030	대경고속관광(주)01	1	GI130925001030	대경고속관광(주)01	0000	2400		NULL	NULL	NULL	NULL
+CI130925001032	GI240930000050	통학버스	1	GI240930000050	통학버스	0000	2400		NULL			NULL
+CI130925001033	GI130925001033	합자회사 소백산관광	1	GI130925001033	합자회사 소백산관광	0900	1800	NULL	NULL	NULL	NULL	NULL
+CI130925001033	GI160502000031	승용	1	GI160502000031	승용	0000	2400		NULL	NULL	NULL	NULL
+CI130925001034	GI211130000007	전체	1	GI211130000007	전체	0000	0000		NULL			NULL
+CI130925001036	GI130925001036	우석관광여행사	1	GI130925001036	우석관광여행사	0900	1800		NULL	NULL	NULL	NULL
+CI130925001037	GI130925001037	1 서흥여객	1	GI130925001037	1 서흥여객	0900	1800		NULL	NULL	NULL	NULL
+CI130925001037	GI230216000004	2 .수려한합천버스	1	GI230216000004	2 .수려한합천버스	0000	2400		NULL			NULL
+CI130925001037	GI251103000024	정비실	1	GI251103000024	정비실	0000	2400		NULL			NULL
+CI130925001038	GI130925001038	산청교통	1	GI130925001038	산청교통	0900	1800	NULL	NULL	NULL	NULL	NULL
+CI130925001039	GI130925001039	만세기 푸드	1	GI130925001039	만세기 푸드	0900	1800	NULL	NULL	NULL	NULL	NULL
+CI130925001040	GI130925001040	석천농산	1	GI130925001040	석천농산	0900	1800	NULL	NULL	NULL	NULL	NULL
+CI130925001040	GI181129000002	석천농산	1	GI181129000002	석천농산	0000	2400		NULL	NULL	NULL	NULL
+CI130925001042	GI130925104201	충효관광(주)	1	GI130925104201	충효관광(주)	0900	1800		NULL	NULL	NULL	NULL
+CI130925001042	GI130925104202	뉴충효관광(주)	1	GI130925104202	뉴충효관광(주)	0900	1800	NULL	NULL	NULL	NULL	NULL
+CI130925001042	GI180206000006	C.H	1	GI180206000006	C.H	0000	2400		NULL	NULL	NULL	NULL
+CI130925001042	GI210713000005	S1	1	GI210713000005	S1	0000	2400		NULL	NULL	NULL	NULL
+
+
+13.UVIS_TB_GROUP
+Column_name	Type	Computed	Length	Prec	Scale	Nullable	TrimTrailingBlanks	FixedLenNullInSource	Collation
+cust_id	varchar	no	14	     	     	no	no	no	Korean_Wansung_CI_AS
+grp_id	varchar	no	14	     	     	no	no	no	Korean_Wansung_CI_AS
+p_grp_id	varchar	no	14	     	     	yes	no	yes	Korean_Wansung_CI_AS
+grp_level	int	no	4	10   	0    	no	(n/a)	(n/a)	NULL
+grp_name	varchar	no	50	     	     	no	no	no	Korean_Wansung_CI_AS
+work_start	varchar	no	4	     	     	yes	no	yes	Korean_Wansung_CI_AS
+work_finish	varchar	no	4	     	     	yes	no	yes	Korean_Wansung_CI_AS
+grp_rmk	varchar	no	4000	     	     	yes	no	yes	Korean_Wansung_CI_AS
+use_yn	char	no	1	     	     	no	no	no	Korean_Wansung_CI_AS
+cre_dt	datetime	no	8	     	     	no	(n/a)	(n/a)	NULL
+cre_id	varchar	no	50	     	     	no	no	no	Korean_Wansung_CI_AS
+upd_dt	datetime	no	8	     	     	yes	(n/a)	(n/a)	NULL
+upd_id	varchar	no	50	     	     	yes	no	yes	Korean_Wansung_CI_AS
+addr1	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+addr2	varchar	no	100	     	     	yes	no	yes	Korean_Wansung_CI_AS
+call_number	varchar	no	15	     	     	yes	no	yes	Korean_Wansung_CI_AS
+temperature_flag	varchar	no	1	     	     	yes	no	yes	Korean_Wansung_CI_AS
+
+index_name	index_description	index_keys
+IX01_UVIS_TB_GROUP	nonclustered located on FG_Data	grp_id, grp_level, use_yn
+PK_UVIS_TB_GROUP	clustered, unique, primary key located on FG_Data	cust_id, grp_id
+
+[data_sample]
+cust_id	grp_id	p_grp_id	grp_level	grp_name	work_start	work_finish	grp_rmk	use_yn	cre_dt	cre_id	upd_dt	upd_id	addr1	addr2	call_number	temperature_flag
+CI191014000008	GI191112000003	GI191112000003	1	에스원	0800	1800		Y	2019-11-12 16:16:18.013	qatest002	2022-07-11 17:47:24.020	qatest002	경기 성남시 분당구 경부고속도로 409	99층	010-9015-5127	NULL
+CI191014000008	GI200811000001	GI191112000003	2	테스트단말기	0800	1730	테스트 단말기 정리	Y	2020-08-11 15:12:49.183	qatest002	2021-03-22 13:25:48.507	qatest002	서울 중구 세종대로7길 25	<h1>B1신뢰성 실험실	010-4124-9634	NULL
+CI191014000008	GI200811000002	GI191112000003	2	렌터카테스트(실차)	0800	1730	실차 테스트	Y	2020-08-11 15:14:11.683	qatest002	2020-08-13 14:11:58.753	qatest002	대전 대덕구 갑천도시고속도로 336	고속도로	02-2131-8626	NULL
+CI191014000008	GI200811000003	GI191112000003	2	렌트카테스트(QA)	0800	1730	테스트 단말기	Y	2020-08-11 15:15:44.093	qatest002	NULL	NULL	서울 중구 세종대로7길 25	10층 관제솔루션Lab	02-2131-8626	NULL
+CI191014000008	GI200828000001	GI191112000003	2	IoT사업팀	0000	1100		Y	2020-08-28 16:02:31.263	test1000	2020-09-04 14:12:24.440	s1uvisdev	서울 중구 세종대로7길 25	10층	010-9779-2252	NULL
+CI191014000008	GI200902000001	GI191112000003	2	상용화테스트	0000	1800	관제솔루션 Lab  상용화 테스트 그룹	Y	2020-09-02 18:03:33.940	qatest002	NULL	NULL	서울 중구 세종대로7길 25	10층 관제솔루션Lab	02-2131-8626	NULL
+CI191014000008	GI201113000001	GI191112000003	2	AMT_TEST	0000	2400		Y	2020-11-13 13:53:05.443	qatest002	NULL	NULL	서울 중구 세종대로7길 25	3층	02-2131-8336	NULL
+CI191111000004	GI191112000003	GI191112000003	1	개별화물 7072	0000	2400		Y	2019-12-30 16:51:25.293	admin	NULL	NULL	NULL	NULL	NULL	NULL
